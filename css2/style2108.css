@@ -1,0 +1,10 @@
+.heading{
+	background-color: #f4f4f4;
+}
+#apssdc{
+	color:#c45e45;
+}
+table,tr,td{
+	border: 3px solid #c45e45;
+	border-collapse:;
+}

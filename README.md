@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PolyTechnic_Internship
 
 # html-documentation
@@ -992,3 +993,6 @@ A join is used to combine multiple tables together. By using this we can combine
     // For retrieving data in ascending order
     SELECT * FROM student_info ORDER BY student_id ASC;
 ```
+=======
+# HTML
+>>>>>>> 7ff140808e543a55dd24a15192b3962526727906

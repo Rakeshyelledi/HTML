@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> :: Registration page :: </title>
+     <link rel="icon" type="text/css" href="image/webimg.jpg">
+     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<style type="text/css">
+
+		body{
+			 background: #B3F5FF;
+		}
+		form {
+			background-color: #EDD5F6;
+			color: #111;
+			padding:20px;
+			width: 40%;
+			margin-left: 30%;
+			border-radius:2%;
+		}
+
+		input{
+			width: 100%;
+			
+			padding: 10px;
+			display: inline-block;
+			box-sizing: border-box;
+
+		}	
+		button[type=submit]{
+		   background-color: #36CE54;
+		   text-align: center;
+		   width: 100%;
+		   padding: 5px;
+		}
+	</style>
+
+
+
+    <script type="text/javascript">
+
+        function validate() {
+        var First Name= document.getElementById("first_name").value;
+       var regex=/^[a-zA-Z]{6,}$/  ;
+        if (regex.test(FirstName)){
+
+            alert("first_name  is valid");
+
+        }
+        else{
+            alert("first_name is invalid");
+        }
+
+
+       var Last Name= document.getElementById("Last_name").value;
+       var regex=/^[a-zA-Z]{6,}$/  ;
+        if (regex.test(Last Name)){
+
+            alert("password is valid");
+
+        }
+        else{
+            alert("password is invalid");
+        }
+
+
+       var Mobilenumber= document.getElementById("mobile").value;
+       var regex=/^[6-9]+\d{9}$/  ;
+        if (regex.test(mobilenumber)){
+
+            alert("Mobilenumber is valid");
+
+        }
+        else{
+            alert("mobilenumber is invalid");
+        }
+
+
+        var Email= document.getElementById("mail").value;
+       var regex=/^\s+@+\s+.\s+$/  ;
+        if (regex.test(email)){
+
+            alert("valid email id");
+
+        }
+        else{
+            alert("invalid email id");
+        }
+
+    }
+        
+    </script>
+
+
+
+</head>
+<body>
+	<center>
+	<h1><i><u>Creative web designing</u></i></h1>
+	 </center>
+	 <div class="container">
+    <form action="webdesignproject.html"method="post">
+
+    	<label for="first_name">First Name :</label>
+    	<input type="text" name="first_name" id="first_name"placeholder="Enter First Name" required><br>
+
+    	<label for="last_name">Last Name :</label>
+    	<input type="text" name="last_name" id="Last_name"placeholder="Enter Last Name" required><br>
+
+    	<label for="email">Email:</label>
+    	<input type="email" name="email" id="email"placeholder="Enter email" required><br>
+
+    	<label for="mobile"> Mobile number:</label>
+    	<input type="number" name="mobile" id="mobile"placeholder="Enter Number" required><br>
+
+    	<label for="Roll Number">Roll Number :</label>
+    	<input type="text" name="rollnumber" id="rollnumber"placeholder="Enter Roll Number" required><br>
+
+         <p>Are you intrested in which technologies ?</p>
+    	<label for="html">HTML:</label>
+    	<input type="checkbox" name="" id="html">
+
+    	<label for="css">CSS:</label>
+    	<input type="checkbox" name="" id="css">
+
+    	<label for="bootstrap">Bootstrap:</label>
+    	<input type="checkbox" name="" id="bootstrap"><br>
+
+        <p>Gender</p>
+    	
+    	<input type="radio" name="Gender" value= "male"id="male" required>
+    	<label for="male">Male:</label>
+ 	
+    	<input type="radio" name="Gender" id="female" required>
+    	<label for="female">Female:</label><br>
+        <hr>
+        <p>By creating an account you agree to our<a href="">Terms & Privacy</a>.</p>
+       
+
+    	<button type="Submit" name="" class="registerbtn">Register</button>
+
+    	<div class="container signin">
+    	<center>	
+        <p>Already have an account? <a href="loginform.html">Sign in</a>.</p>
+        </center>
+    </div>
+    </div>
+    </form>
+</body>
+</html>
+

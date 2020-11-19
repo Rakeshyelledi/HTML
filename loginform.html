@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:: Welcome to login page ::</title>
+   <link rel="icon" type="text/css" href="image/webimg.jpg">
+	<style type="text/css">
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #B3F5FF;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* style for container */
+.container {
+  position: relative;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  width: 50%;
+  padding: 10px 0 20px 0;
+} 
+
+/* style for inputs and link buttons */
+input,
+.btn {
+  width: 50%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* style for submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: center;
+  width: 50%;
+  margin: auto;
+  padding: 0 0px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body>
+	   <center>
+          <h1><i><u>Creative web designing</u></i></h1>
+       </center>
+
+      <center>
+    <div class="container">   
+    <form action="webdesignproject.html">
+    <div class="row">
+      <h2 style="text-align:center">Manually</h2>
+     
+       <input type="text"  id="use" name="username" placeholder="Username" required>
+       <input type="password" id="pass" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+
+
+
+        <script type="text/javascript">
+  function validate() {
+    var UserName= document.getElementById("use").value;
+       var regex=/^[a-zA-Z]{6,}$/  ;
+    if (regex.test(UserName)){
+
+      alert("User Name  is valid");
+
+    }
+    else{
+      alert("User Name is invalid");
+    }
+
+     var password= document.getElementById("pass").value;
+       var regex=/^(?=.*[!@#$%*&])(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,16}$/  ;
+    if (regex.test(password)){
+
+      alert("password is valid");
+
+    }
+    else{
+      alert("password is invalid");
+    }
+
+  }
+</script>
+
+
+  </form>
+</div>
+</center>
+</body>
+</html>

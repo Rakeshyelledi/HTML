@@ -1,0 +1,28 @@
+{
+	"details":{
+		"name":"Andhra pradesh state skill developent Coopration(APSSDC)",
+	     "age":"5 Years",
+	     "image":"image/webimg.jpg",
+	     "Course":["intership on webdesign","python programming","web design using React"]
+	},
+	"trainers":[
+		{
+			"name":"P.Kalyan Chakravarthi",
+			"experience":"5 years",
+			"email":"kalyanchakravarthi.p@apssdc.in",
+			"phone":9999999999
+		},
+		{
+			"name":"SK.Badulla",
+			"experience":"5 years",
+			"email":"badulla.sk@apssdc.in",
+			"phone":9999957891
+		},
+		{
+			"name":"D.sairam",
+			"experience":"5 years",
+			"email":"sairam.d@apssdc.in",
+			"phone":9995999586
+		}
+	]
+}

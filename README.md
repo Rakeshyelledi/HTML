@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PolyTechnic_Internship
 
 # html-documentation
